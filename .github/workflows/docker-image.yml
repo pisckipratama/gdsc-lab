@@ -25,4 +25,4 @@ jobs:
       - name: Docker Push
         run: |
           docker tag my-nodejs-app:${GITHUB_RUN_NUMBER} ${{secrets.DOCKER_USER}}/my-nodejs-app:1.0.${GITHUB_RUN_NUMBER}
-          docker push ${{secrets.DOCKER_USER}}/my-nodejs-app:v1.${GITHUB_RUN_NUMBER}
+          docker push ${{secrets.DOCKER_USER}}/my-nodejs-app:1.0.${GITHUB_RUN_NUMBER}
